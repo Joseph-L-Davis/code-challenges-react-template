@@ -12,3 +12,10 @@ export function findMax(matrix) {
     return num.sort((a, b) => b - a)[0];
   }
 }
+
+export function totalSum(matrix) {
+  let nums = [];
+  for (let i = 0; i < matrix.length; i++) {
+    num[i] = matrix[i].sort((a, b) => b + a)[i];
+  }
+}
