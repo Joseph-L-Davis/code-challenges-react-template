@@ -22,11 +22,13 @@ export function listFoods(obj) {
 
 export function stepActions(recipe) {
   let arr = recipe.steps;
+  let str = String(arr);
+  let str2 = str.split('  ');
   let arr2 = [];
-  for (let str of arr) {
-    arr2.push(str[0]);
+  for (let i = 0; i < str2.length; i++) {
+    if (i === 'Pre-heat' || i === 'De=prickle' || i === 'Sprinkle' || i === 'Mix' || i === 'Grease' || i === 'Combine' || i === 'Fold' || i === 'Spread' || i === 'Bake') {
+      arr2.push(i);
+    }
   }
   return arr2;
 }
-
-// comment to create new PR

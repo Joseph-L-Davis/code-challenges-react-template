@@ -45,7 +45,7 @@ it.skip('return food', () => {
   expect(listFoods(gruffaloCrumble)).toBe(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
 });
 
-it('return food', () => {
+it.skip('return food', () => {
   const gruffaloCrumble = {
     name: 'How to make a Gruffalo Crumble',
     ingredients: [
