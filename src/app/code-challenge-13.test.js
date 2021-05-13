@@ -1,4 +1,4 @@
-import { containsW, isNum, sortByChildren } from './code-challenge-13.js';
+import { containsW, containsWorld, isNum, sortByChildren } from './code-challenge-13.js';
 
 describe('Testing challenge 1', () => {
   it.skip('It should sort the characters by number of children', () => {
@@ -16,5 +16,12 @@ describe('return if w', () => {
 describe('return true if nums', () => {
   test('It should sort the characters by number of children', () => {
     expect(isNum('h3llo')).toStrictEqual(true);
+  });
+});
+
+describe('return true if world', () => {
+  test('It should sort the characters by number of children', () => {
+    expect(containsWorld('hello world')).toStrictEqual(true);
+    expect(containsWorld('hello')).toStrictEqual(false);
   });
 });

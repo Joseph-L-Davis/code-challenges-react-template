@@ -56,3 +56,8 @@ export function isNum(input) {
   let regex = /\d/;
   return regex.test(input);
 }
+
+export function containsWorld(input) {
+  let regex = /(?:world)/;
+  return regex.test(input);
+}
