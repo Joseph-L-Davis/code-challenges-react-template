@@ -1,4 +1,4 @@
-import { containsW, containsWorld, isCapitalized, isNum, sortByChildren } from './code-challenge-13.js';
+import { citiesAtoJ, containsW, containsWorld, isCapitalized, isNum, sortByChildren } from './code-challenge-13.js';
 
 describe('Testing challenge 1', () => {
   it.skip('It should sort the characters by number of children', () => {
@@ -32,4 +32,13 @@ describe('return true if capitalized', () => {
     expect(isCapitalized('Hello')).toStrictEqual(true);
   });
 });
+
+describe('return arr of cities starting in a-j', () => {
+  test('It should sort the characters by number of children', () => {
+    expect(citiesAtoJ(['Cleveland', 'San Diego', 'Birmingham', 'Seattle', 'Miami', 'New York City', 'Omaha', 'Portland', 'Austin', 'Boston', 'Newport Beach', 'Hoboken'])).toStrictEqual(['Cleveland', 'Birmingham', 'Austin', 'Boston', 'Hoboken']);
+    expect(citiesAtoJ(['Albuquerque', 'Chicago', 'Philadelphia', 'Newark', 'Sacramento', 'Eugene'])).toStrictEqual(['Albuquerque', 'Chicago', 'Eugene']);
+  });
+});
+
+
 
