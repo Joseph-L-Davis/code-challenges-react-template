@@ -68,7 +68,7 @@ export function isCapitalized(str) {
 }
 
 export function citiesAtoJ(arr) {
-  let regex = /^[A-J]/;
+  let regex = /^[A-J]\w+/;
   let cities = [];
   for (let i = 0; i < arr.length; i++) {
     cities.push(regex.test(arr[i]));
