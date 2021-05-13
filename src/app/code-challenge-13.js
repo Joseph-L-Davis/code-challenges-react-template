@@ -61,3 +61,8 @@ export function containsWorld(input) {
   let regex = /(?:world)/;
   return regex.test(input);
 }
+
+export function isCapitalized(str) {
+  let regex = /^[A-Z]/;
+  return regex.test(str);
+}

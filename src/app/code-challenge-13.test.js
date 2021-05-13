@@ -1,4 +1,4 @@
-import { containsW, containsWorld, isNum, sortByChildren } from './code-challenge-13.js';
+import { containsW, containsWorld, isCapitalized, isNum, sortByChildren } from './code-challenge-13.js';
 
 describe('Testing challenge 1', () => {
   it.skip('It should sort the characters by number of children', () => {
@@ -25,3 +25,11 @@ describe('return true if world', () => {
     expect(containsWorld('hello')).toStrictEqual(false);
   });
 });
+
+describe('return true if capitalized', () => {
+  test('It should sort the characters by number of children', () => {
+    expect(isCapitalized('hello world')).toStrictEqual(false);
+    expect(isCapitalized('Hello')).toStrictEqual(true);
+  });
+});
+
