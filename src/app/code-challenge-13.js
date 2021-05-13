@@ -51,3 +51,8 @@ export function containsW(str) {
   let regex = /w/;
   return regex.test(str);
 }
+
+export function isNum(input) {
+  let regex = /\d/;
+  return regex.test(input);
+}
